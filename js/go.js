@@ -60,7 +60,7 @@ function go(url) {
 var web = document.getElementById("web")
 var webnav = document.getElementById("webnav")
 var settingsbtn = document.getElementById("settingsbtn")
-web.src = "/playground/_/" + url
+web.src =  __uv$config.prefix + __uv$config.encodeUrl(url);
 web.style.display = "initial"
 webnav.style.display = "flex"
 settingsbtn.style.display = "none"
