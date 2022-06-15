@@ -46,4 +46,11 @@
 <iframe src="" id="web"></iframe>
 
 <footer>Fog Network 2021 | <a href="https://github.com/FogNetwork/Shadow">Github</a> | <a href="https://discord.gg/yk33HZSZkU">Discord</a></footer>
+<script src="uv/uv.bundle.js"></script>
+<script src="uv/uv.config.js"></script>
+<script>
+    window.navigator.serviceWorker.register('./sw.js?cros', {
+        scope: __uv$config.prefix
+    })
+</script>
 </body>
