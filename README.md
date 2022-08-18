@@ -1,7 +1,7 @@
-# Playground
+# What
 
 Ultraviolet sandbox playground.
 
 Uses [Incognito](https://incog.dev/) for its bare server.
 
-[Play!](https://caracal-js.github.io/playground/)
+[Play!](https://mdoryammilwalrus.github.io/what/)
