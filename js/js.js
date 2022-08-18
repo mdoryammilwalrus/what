@@ -1,4 +1,4 @@
-const prefix = "/fetch/";
+const prefix = "/playground/_/";
 const URL_BAR = document.getElementById("urlbar");
 const ACTIVE_WINDOW = () => { return document.getElementById(getActiveFrameId()).contentWindow; }
 const CONTENT_WINDOW = (n) => { return document.getElementById(n).contentWindow }
@@ -183,7 +183,7 @@ function openMenu(...x) {
 }
 function inspect() {
   let firebug = document.createElement("script");
-  firebug.setAttribute("src", "/fbl/firebug-lite-debug.js");
+  firebug.setAttribute("src", "/playground/fbl/firebug-lite-debug.js");
   ACTIVE_DOCUMENT().body.appendChild(firebug)(function () {
     if (
       ACTIVE_WINDOW().firebug.version
@@ -226,9 +226,9 @@ function skipAd() {
   };
 }
 let newTab = (url, uxor = true) => {
-  // creates a new hypertab!!
+  // creates a new testingtab!!
   chromeTabs.addTab({
-    title: "New Hypertab",
+    title: "New TestingTab",
     favicon: "favicon.ico",
   });
 
